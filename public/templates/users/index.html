@@ -1,0 +1,6 @@
+<a href = "#/users/new">create a new user</a>
+<ul ng-show="users.length" ng-repeat = "user in users">
+{{user.username}}  email: {{user.email}}
+</ul>
+
+<a href = "#/users/{{user.id}}/edit">edit</a> | <a href = "" ng-click="deleteUser(user.id)">Remove</a>
